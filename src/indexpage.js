@@ -37,42 +37,10 @@ class IndexPage extends Component{
 						<span>热点好项目</span>
 						<span>资讯专题</span>
 					</div>
-					<div className="menu-sub">
-						<span>业务介绍</span>
-						<span>最新线报</span>
-						<span>安卓软件</span>
-						<span>新手必备</span>
-						<span>苹果软件</span>
-						<span>项目动态</span>
-						<span>网撰工具</span>
-						<span>靠谱软件</span>
-						<span>软件专题</span>
-					</div>
-				</div>
-				<div className="switch-bar">
-					<div className="word-switch">
-						<span className="red-talk">公告：</span>
-						关于合肥闪艺撒啊上飞机啦开始发六级考试发顺丰睡觉了
-					</div>
 				</div>
 				<div className="content-body">
 					<div className="the-big-first-picture">第一张图片，1160px*196px</div>
 					<div className="the-big-second-picture">第二张图片，1160px*196px</div>
-					<div className="left-big-three-picture">
-						<div className="left-big-picture">左边的大图，480px*240px</div>
-						<div className="right-three-picture">
-							<div className="right-top-three-picture">
-								<div className="first-picture">第一张图，225px*112px</div>
-								<div className="second-picture">第二张图</div>
-								<div className="thrid-picture">第三张图</div>
-							</div>
-							<div className="right-bottom-three-picture">
-								<div className="first-picture">第一张图</div>
-								<div className="second-picture">第二张图</div>
-								<div className="thrid-picture">第三张图</div>
-							</div>
-						</div>
-					</div>
 					<div className="ten-recommend">
 						<div className="top-five-recommend">
 							<div className="every-one-recommend">
