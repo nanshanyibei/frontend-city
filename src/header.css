@@ -1,0 +1,97 @@
+.top-header{
+  width: 100%;
+  height: 216px;
+  background-color: aquamarine;
+  padding-left: 132px;
+}
+.top-header-top{
+	display: flex;
+	width: 1160px;
+	margin: 0 auto;
+	height: 120px;
+	align-items: center;
+}
+.left-picture{
+  width: 220px;
+  height: 120px;
+	background-color: antiquewhite;
+	margin-right: 40px;
+}
+.right-top-search-login{
+	display: flex;
+}
+.search-bar{
+  display: flex;
+}
+.login-register{
+  display: flex;
+}
+.search-bar-container{
+	display: flex;
+	margin-right: 20px;
+}
+.choose-option{
+	height: 38px;
+	width: 50px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 12px;
+	background-color: rgb(228, 225, 225);
+	border: 1px solid #bbb;
+}
+.input-area{
+	height: 36px;
+	border: none;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	width: 680px;
+}
+.search-bar-container::after{
+	display: inline-block;
+	content: "搜索";
+	background-color: rgb(95,164,6);
+	color: rgb(255,255,255);
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	width: 70px;
+	font-size: 16px;
+	font-family: '微软雅黑';
+	border: 1px solid rgb(84, 143, 8);
+	margin-right: 20px;
+}
+.login, .register{
+	color: #fff;
+	font-size: 12px;
+	display: inline-block;
+	width: 50px;
+	line-height: 26px;
+	text-align: center;
+	margin: 7px 10px 0 0;
+	height: 26px;
+	background-color: #a0c76a;
+	border: 1px solid #8bb651;
+	cursor: pointer;
+}
+.register{
+	background-color: #f6826b;
+	border: 1px solid #e77761;
+}
+.top-header-body{
+	width: 1160px;
+	margin: 10px auto 0;
+}
+.menu-main span{
+	display: inline-block;
+	width: 110px;
+	height: 52px;
+	text-align: center;
+	margin-bottom: 2px;
+	line-height: 52px;
+	font-size: 16px;
+	color: #61605e;
+	font-weight: 600;
+}
+.menu-main span:hover{
+	color: #e77761
+}
