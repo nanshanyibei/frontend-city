@@ -12,10 +12,12 @@
 	align-items: center;
 }
 .left-picture{
-  width: 220px;
+  width: 240px;
   height: 120px;
 	background-color: antiquewhite;
-	margin-right: 40px;
+}
+.right-content{
+	width: 920px;
 }
 .right-top-search-login{
 	display: flex;
@@ -28,7 +30,7 @@
 }
 .search-bar-container{
 	display: flex;
-	margin-right: 20px;
+	margin: 0 20px;
 }
 .choose-option{
 	height: 38px;
@@ -44,7 +46,7 @@
 	border: none;
 	border-top: 1px solid #bbb;
 	border-bottom: 1px solid #bbb;
-	width: 680px;
+	width: 600px;
 }
 .search-bar-container::after{
 	display: inline-block;
@@ -83,7 +85,7 @@
 }
 .menu-main span{
 	display: inline-block;
-	width: 110px;
+	width: 100px;
 	height: 52px;
 	text-align: center;
 	margin-bottom: 2px;

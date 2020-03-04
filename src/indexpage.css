@@ -48,15 +48,8 @@
 	font-size: 12px;
 	cursor: pointer;
 }
-.middle-content-word{
-	display: flex
-}
 .latest-updates-and-popular-articles{
 	border: 1px solid #d4d4d4;
-	width: 760px;
-}
-.popular-articles{
-	width: 100%;
 }
 .lastest-update{
 	border-bottom: 1px solid #d4d4d4;
@@ -70,38 +63,21 @@
 	cursor: pointer;
 	color: #5fa406;
 }
-.lastest-update::after{
-	display: inline-block;
-	content: "查看更多";
-	font-size: 12px;
-	color: #000000;
-	position: absolute;
-	right: 0;
-	margin-right: 10px;
-}
-.every-block-report{
-	padding: 10px 0 10px 16px;
-}
-.report-body-element{
-	display: flex;
-	border-bottom: 1px dotted #eeeeee;
-	width: 360px;
-	margin-right: 16px;
-	padding: 5px 0;
-	height: 22px;
-	line-height: 22px;
-	font-size: 12px;
-}
-.report-body{
+.report-element-two{
 	display: flex;
 }
-.report-body-content{
-	width: 300px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+.download-area{
+	width: 1160px;
+	margin: 0 auto;
 }
-.report-body-content:hover{
-	color: #5fa406;
-	cursor: pointer;
+.six-images-container{
+	display: flex
+}
+.every-six-image{
+	width: 193.3px;
+	height: 80px;
+	background-color: #ffcccc;
+	line-height: 80px;
+	text-align: center;
+	border: 1px solid #ff6666;
 }

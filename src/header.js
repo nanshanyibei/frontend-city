@@ -12,7 +12,7 @@ class Header extends Component{
 		return (
 			<div>
 				<div className="top-header-top">
-					<div className='left-picture'>logo,220px*120px</div>
+					<div className='left-picture'>logo,240px*120px</div>
 					<div className="right-content">
 						<div className="right-top-search-login">
 							<div className="search-bar-container">
