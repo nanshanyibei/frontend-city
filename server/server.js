@@ -22,7 +22,7 @@ app.post('/user_register', function(req, res){
 		if(doc){
 			return res.json({code: 1, msg: "用户名重复"})
 		}
-		const userModel=new UserShouZhuan({name: username, password, comments: [], atricles: []})
+		const userModel=new UserShouZhuan({name: username, password, emailaddress, comments: [], atricles: []})
 		userModel.save(function(err,doc){
 			if(err){
 				return res.json({code:1,msg:'后端出错了'})
