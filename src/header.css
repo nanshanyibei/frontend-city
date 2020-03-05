@@ -97,3 +97,10 @@
 .menu-main span:hover{
 	color: #e77761
 }
+.the-big-first-picture{
+	width: 1160px;
+	height: 196px;
+	background-color: gold;
+	color: #fff;
+	margin: 0 auto;
+}

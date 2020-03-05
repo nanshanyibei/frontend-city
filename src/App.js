@@ -7,8 +7,18 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
+import thunk from 'redux-thunk';
+import { createStore, applyMiddleware, compose } from 'redux';
+import { Provider } from 'react-redux'
+import reducers from './reducer'
 import IndexPage from './indexpage'
+import Register from './register'
 import './App.css';
+
+const store = createStore(reducers, compose(
+	applyMiddleware(thunk),
+	window.devToolsExtension ? window.devToolsExtension() : f => f
+))
 
 class App extends Component{
   constructor(props){
@@ -19,13 +29,14 @@ class App extends Component{
   }
   render(){
     return (
-      <div>
+      <Provider store={store}>
         <BrowserRouter>
           <Switch>
             <Route path="/" exact component={IndexPage} />
+            <Route path="/register" component={Register} />
           </Switch>
         </BrowserRouter>
-      </div>
+      </Provider>
     )
   }
 }

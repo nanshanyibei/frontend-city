@@ -15,24 +15,22 @@ app.get("/",function(req,res){
 	res.send("<h1>Hello World</h1>")
 })
 app.post('/user_register', function(req, res){
-	// const userid = req.cookies.userid
-	// const { from } = req.body
-	// console.log(userid, from)
-	// model.update(
-	// 	{from, to: userid},
-	// 	{'$set': {read: true}},
-	// 	{'multi': true},
-	// 	function(err, doc){
-	// 	console.log(doc)
-	// 	if(!err){
-	// 		return res.json({code: 0, num: doc.nModified})
-	// 	}
-	// 	return res.json({code: 1, msg: '修改失败'})
-	// })
 	console.log('请求user_register端口')
-	// const {from} = req.body
-	console.log(req.body)
-	return res.json({code: 1, msg: '暂时OK'})
+	const {username, nickname, password, emailaddress} = req.body
+	console.log(username, nickname, password, emailaddress)
+	UserShouZhuan.findOne({name: username}, function(err, doc){
+		if(doc){
+			return res.json({code: 1, msg: "用户名重复"})
+		}
+		const userModel=new UserShouZhuan({name: username, password, comments: [], atricles: []})
+		userModel.save(function(err,doc){
+			if(err){
+				return res.json({code:1,msg:'后端出错了'})
+			}
+			const {name, _id} = doc
+			return res.json({code:0,data:{name,_id}})
+		})
+	})
 })
 server.listen(9093,function(){
   console.log("Node app start at port 9093")

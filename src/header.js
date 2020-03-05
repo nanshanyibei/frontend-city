@@ -39,6 +39,7 @@ class Header extends Component{
 						</div>
 					</div>
 				</div>
+				<div className="the-big-first-picture">第一张图片，1160px*196px</div>
 			</div>
 		)
 	}

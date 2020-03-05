@@ -18,7 +18,6 @@ class IndexPage extends Component{
 			<div className="App">
 				<Header />
 				<div className="content-body">
-					<div className="the-big-first-picture">第一张图片，1160px*196px</div>
 					<div className="the-big-second-picture">第二张图片，1160px*196px</div>
 					<div className="ten-recommend">
 						<div className="top-five-recommend">
