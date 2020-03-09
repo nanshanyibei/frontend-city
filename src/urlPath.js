@@ -1,3 +1,3 @@
-const urlPath = ''
+const urlPath = '';
 
-export default urlPath
+export default urlPath;

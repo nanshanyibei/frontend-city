@@ -7,8 +7,10 @@
 	width: 220px;
 	padding-left: 30px;
 	font-size: 20px;
-	padding-top: 220px;
 	background-color: #feeeee;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .user-login, .user-register{
 	height: 70px;
