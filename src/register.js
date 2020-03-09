@@ -11,13 +11,11 @@ class Register extends Component{
 		this.state={
 			registerOrLogin: true,
 			username: '',
-			nickname: '',
 			password: '',
 			insurepassword: '',
 			emailaddress: ''
 		}
 		this.userName=this.userName.bind(this)
-		this.nickName=this.nickName.bind(this)
 		this.passWord=this.passWord.bind(this)
 		this.insurePassword=this.insurePassword.bind(this)
 		this.emailInput=this.emailInput.bind(this)
@@ -26,11 +24,6 @@ class Register extends Component{
 	userName(e) {
 		this.setState({
 			username: e.target.value
-		})
-	}
-	nickName(e){
-		this.setState({
-			nickname: e.target.value
 		})
 	}
 	passWord(e){
@@ -54,7 +47,6 @@ class Register extends Component{
 	registerButton(){
 		const registerdata = {
 			username: this.state.username,
-			nickname: this.state.nickname,
 			password: this.state.password,
 			insurepassword: this.state.insurepassword,
 			emailaddress: this.state.emailaddress
@@ -82,12 +74,6 @@ class Register extends Component{
 									onChange={this.userName} 
 									value={this.state.username} />
 								<span className="user-name-prompt">12位以内英文字母、数字或下划线</span>
-							</div>
-							<div className="nick-name">
-								<div className="nick-name-word">昵称：</div>
-								<input className="nick-name-input" 
-									value={this.state.nickname} 
-									onChange={this.nickName} />
 							</div>
 							<div className="password">
 							<div className="password-word">密码：</div>

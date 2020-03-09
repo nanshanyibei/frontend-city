@@ -30,21 +30,21 @@
 	font-weight: normal;
 	width: 90%;
 }
-.user-name, .nick-name, .password, .insure-password, .email-address{
+.user-name, .password, .insure-password, .email-address{
 	display: flex;
 	margin-bottom: 15px;
 }
 .user-name{
 	margin-top: 40px;
 }
-.user-name-word, .nick-name-word, .password-word, .insure-password-word, .email-address-word{
+.user-name-word, .password-word, .insure-password-word, .email-address-word{
 	width: 150px;
 	text-align: right;
 	font-size: 16px;
 	height: 42px;
 	line-height: 42px;
 }
-.user-name-input, .nick-name-input, .password-input, .insure-password-input, .email-input{
+.user-name-input, .password-input, .insure-password-input, .email-input{
 	width: 220px;
 	height: 30px;
 	line-height: 30px;
